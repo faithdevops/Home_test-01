@@ -21,6 +21,7 @@ The deployment is set up to handle rolling deployments and rollbacks. The deploy
 
 Ingress controller
 An nginx ingress controller resource will be created which will enable end user to talk to the user and shift application.
+
 IAM Controls
 To ensure that our development team cannot run certain commands on the Kubernetes cluster, we will use Role-Based Access Control (RBAC). We will create a Role that allows the team to deploy and roll back, but not to perform other privileged actions. We will also create a RoleBinding that associates the Role with the team's Kubernetes Service Account.
 
