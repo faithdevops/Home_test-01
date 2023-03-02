@@ -9,6 +9,7 @@ In this exercise, we want to deploy two containers that scale independently from
 Kubernetes Resources
 
 We will use Kubernetes to deploy the two containers and their respective services. The following Kubernetes resources will be created:
+
 deployment-users.yaml: Deployment configuration for the users container
 service-users.yaml: Service configuration for the users container
 deployment-shifts.yaml: Deployment configuration for the shifts container
