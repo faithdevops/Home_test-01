@@ -35,7 +35,7 @@ The deployment is set up to handle rolling deployments and rollbacks. The deploy
 
 **Ingress controller**
 
-An nginx ingress controller resource will be created which will enable end user to talk to the user and shift application.
+An nginx ingress controller resource will be created which will enable end user talk to the user and shift application.
 
 **IAM Controls**
 
@@ -43,11 +43,12 @@ To ensure that our development team cannot run certain commands on the Kubernete
 
 **Configuring Multiple Environments**
 
-We can configure multiple environments by creating separate Kubernetes namespaces for each environment, such as staging and production. We can then deploy the same resources to each namespace with different configuration values, such as different database connection strings.
+We can configure multiple environments by creating separate Kubernetes namespaces for each environment, such as staging and production. We can then deploy the same resources to each namespace with different configuration values.Also, we can create a separate ConfigMaps for staging and production environments and then Modify the deployment manifest to use the ConfigMap data.
+
 
 **Auto-scaling based on Network Latency**
 
-To auto-scale the deployment based on network latency instead of CPU, we can use the Kubernetes Metrics Server. We can then create a custom metrics API that exposes network latency metrics and use these metrics to scale the deployment. However, this requires more advanced setup and is outside the scope of this exercise.
+To auto-scale the deployment based on network latency instead of CPU, we can use the Kubernetes Metrics Server and create a custom metrics API that will expose the network latency metrics and use these metrics to scale the deployment. However, this requires more advanced setup and is outside the scope of this exercise.
 
 **Conclusion**
 
