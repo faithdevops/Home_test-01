@@ -22,7 +22,7 @@ postgres-deployment.yaml: Deployment configuration for PostgreSQL database
 
 postgres-pvc.yaml: PersistentVolumeClaim for the PostgreSQL database
 
-ingress.yaml: routing traffic
+ingress.yaml: ingress controller configuration
 
 
 **Auto-scaling**
