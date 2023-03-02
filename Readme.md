@@ -1,4 +1,4 @@
-Exercise Description
+*Exercise Description*
 In this exercise, we want to deploy two containers that scale independently from one another. The first container runs code that runs a small API that returns users from a database, while the second container runs code that runs a small API that returns shifts from a database. We want to ensure that the deployment can handle rolling deployments and rollbacks and that the deployment can scale based on CPU usage.
 
 
