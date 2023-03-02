@@ -43,7 +43,7 @@ To ensure that our development team cannot run certain commands on the Kubernete
 
 **Configuring Multiple Environments**
 
-We can configure multiple environments by creating separate Kubernetes namespaces for each environment, such as staging and production. We can then deploy the same resources to each namespace with different configuration values.Also, we can create a separate ConfigMaps for staging and production environments and then Modify the deployment manifest to use the ConfigMap data.
+We can configure multiple environments by creating separate Kubernetes namespaces for each environment, such as staging and production and then deploy the same resources to each namespace with different configuration values.Also, we can create a separate ConfigMaps for staging and production environments and then Modify the deployment manifest to use the ConfigMap data.
 
 
 **Auto-scaling based on Network Latency**
