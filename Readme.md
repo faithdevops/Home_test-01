@@ -18,6 +18,7 @@ The deployment is set up to autoscale based on CPU usage. The horizontal pod aut
 
 Rolling Deployment and Rollback
 The deployment is set up to handle rolling deployments and rollbacks. The deployment strategy is set to rolling updates, which ensures that only a certain number of pods are updated at a time. This helps to prevent downtime and ensures that the application is always available. If there are any issues with the deployment, we can easily roll back to the previous version using the kubectl rollout undo command.
+
 Ingress controller
 An nginx ingress controller resource will be created which will enable end user to talk to the user and shift application.
 IAM Controls
