@@ -10,17 +10,17 @@ Kubernetes Resources
 
 We will use Kubernetes to deploy the two containers and their respective services. The following Kubernetes resources will be created:
 
-deployment-users.yaml: Deployment configuration for the users container
+users.yaml: Deployment configuration for the users container and the users-service configuration
 
-service-users.yaml: Service configuration for the users container
+shifts.yaml: Deployment configuration for the shifts container and the shift-service configuration
 
-deployment-shifts.yaml: Deployment configuration for the shifts container
+postgres.yaml: Deployment configuration for PostgreSQL database
 
-service-shifts.yaml: Service configuration for the shifts container
+mongo.yaml: Deployment configuration for mongodb database
 
-postgres-deployment.yaml: Deployment configuration for PostgreSQL database
+pvc.yaml: PersistentVolumeClaim for the mongodb database
 
-postgres-pvc.yaml: PersistentVolumeClaim for the PostgreSQL database
+pvc2.yaml: PersistentVolumeClaim for the PostgreSQL database
 
 ingress.yaml: ingress controller configuration
 
