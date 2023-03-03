@@ -30,11 +30,13 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: mongodb
+  name: mongodb-service
 spec:
   selector:
     app: mongodb
   ports:
-  - name: mongodb
-    port: 27017
-    targetPort: 27017
+    - name: mongodb
+      port: 27017
+      targetPort: 27017
+  type: ClusterIP
+
