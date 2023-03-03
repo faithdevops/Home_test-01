@@ -37,7 +37,6 @@ spec:
             - name: MONGO_DB_NAME
               value: "users-db"
 ---
-# service-users.yaml
 apiVersion: v1
 kind: Service
 metadata:
@@ -49,4 +48,6 @@ spec:
     - name: http
       port: 80
       targetPort: 80
-  type: NodePort             
+      nodePort: 30080
+  type: NodePort
+       
