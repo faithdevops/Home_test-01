@@ -22,7 +22,12 @@ pvc.yaml: PersistentVolumeClaim for the mongodb database
 
 pvc2.yaml: PersistentVolumeClaim for the PostgreSQL database
 
+hpa-shift.yaml: horizontal pod autoscaler for the shift deployment
+
+hpa-users.yaml: horizontal pod autoscaler for the users deployment
+
 ingress.yaml: ingress controller configuration
+
 
 
 **Auto-scaling**
