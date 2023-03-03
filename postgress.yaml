@@ -1,10 +1,10 @@
 # postgres-deployment.yaml
 apiVersion: apps/v1
-kind: Deployment
+kind: statefulset
 metadata:
   name: postgres-deployment
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       app: postgres
