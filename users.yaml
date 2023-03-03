@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
         - name: users
-          image: your-docker-image-here
+          image: users-docker-image
           resources:
             requests:
               cpu: "100m"
