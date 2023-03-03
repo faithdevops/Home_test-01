@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
         - name: shifts
-          image: your-docker-image-here
+          image: shift-docker-image
           resources:
             requests:
               cpu: "100m"
